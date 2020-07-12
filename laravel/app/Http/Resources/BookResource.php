@@ -21,7 +21,8 @@ class BookResource extends JsonResource
             'created_at' => (string) $this->created_at,
             'updated_at' => (string) $this->updated_at,
             'user'=> $this->user,
-            'rating' => $this->ratings
+            'rating' => $this->ratings,
+            'average_rating' => $this->ratings->avg('rating')
         ];
     }
 }

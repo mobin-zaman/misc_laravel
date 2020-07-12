@@ -11,7 +11,7 @@ class Book extends Model
     }
 
     public function ratings() {
-        return $this->hasMany(Ratings::class);
+        return $this->hasMany(Rating::class);
     }
 
     /**
